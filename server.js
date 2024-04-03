@@ -49,7 +49,7 @@ app.get("/", (req, res) => {
   res.send("Welcome to the homepage");
 });
 
-const PORT = process.env.PORT || "3000";
+const PORT = "https://personal-web-api-644eb4dfcb7c.herokuapp.com" || "3000";
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
