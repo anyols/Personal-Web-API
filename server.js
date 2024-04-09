@@ -13,8 +13,8 @@ app.use(
 const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
 
 const storeItems = new Map([
-  [1, { priceInCents: 1499, name: "Personal Website" }],
-  [2, { priceInCents: 250, name: "Added Sections" }],
+  [1, { priceInCents: 2999, name: "Personal Website" }],
+  [2, { priceInCents: 500, name: "Added Sections" }],
 ]);
 
 app.post("/create-checkout-session", async (req, res) => {
